@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja" target="_blank">
+    <head>
+        <meta charset="UTF-8" />
+        <title>素敵曜日 - HTML Lab - footer</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            html {
+                width: 100%;
+            }
+            body {
+                width: 100%;
+            }
+            footer {
+                margin: 0;
+                padding-top: 5%;
+                background-color: rgba(24, 3, 148, 0.9);
+                box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.4) inset;
+            }
+            /* footer-main-contents */
+            #footer-main-contents {
+                width: 100%;
+                height:auto;
+                background-color: rgba(255,100,100,0.5);
+                clear: both;
+                display:flex; /* 高さを合わせる */
+            }
+            #footer-main-contents h3 {
+                padding-top:10px;
+                padding-bottom:10px;
+            }
+        /* footer-magazine */
+        #footer-magazine {
+            width: 50%;
+            /* background-color: rgba(255,100,100,0.5); */
+            float:left;
+        }
+        #footer-magazine ul {
+            
+        }
+        #footer-magazine ul li {
+            float:none;
+        }
+        /* footer-category */
+        #footer-category {
+            width: 20%;
+            /* background-color: rgba(255,255,100,0.5); */
+            float:left;
+        }
+        #footer-category ul {
+        }
+        #footer-category ul li {
+            float:none;
+        }
+        /* footer-other */
+        #footer-other {
+            width: 30%;
+            /* background-color: rgba(255,255,255,0.5); */
+            float:left;
+        }
+        /* footer-other [0] */
+        /* footer-about */
+        #footer-about {
+            width: 100%;
+            /* background-color: rgba(0,0,0,0.5); */
+            float:none;
+        }
+        #footer-about ul {
+        }
+        #footer-about ul li {
+            float:none;
+        }
+        /* footer-other [1] */
+        /* footer-link */
+        #footer-link {
+            width: 100%;
+            /* background-color: rgba(255,100,255,0.5); */
+            float:none;
+        }
+        #footer-link ul {
+        }
+        #footer-link ul li {
+            float:none;
+        }
+        /* footer-other [2] */
+        /* footer-share */
+        #footer-share {
+            width: 100%;
+            /* background-color: rgba(100,255,255,0.5); */
+            float:none;
+        }
+        #footer-share ul {
+        }
+        #footer-share ul li {
+            float:none;
+        }
+        
+        #footer-message-contents {
+            width: 100%;
+            background-color: rgba(255,100,100,0.5);
+            clear: both;
+                display:flex; /* 高さを合わせる */
+        }
+        /* footer-message */
+        #footer-message {
+            font-size:1.0vw;
+            width: 50%;
+            background-color: rgba(255,0,0,0.5);
+            float:left;
+        }
+        /* footer-member-join */
+        #footer-member-join {
+            width: 20%;
+            background-color: rgba(0,255,00,0.5);
+            float:left;
+        }
+        /* footer-copyright */
+        #footer-copyright {
+            font-size:1.0vw;
+            width: 30%;
+            background-color: rgba(0,0,255,0.5);
+            float:left;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="mainMenuList">
+                <menu>
+                    <li class="mainMenuList"><a class="mainMenu" href="http://sunstripe.main.jp/">HOME</a></li>
+                    <li class="mainMenuList"><a class="mainMenu" href="http://sunstripe.main.jp/lab/">素敵曜日</a></li>
+                    <li class="mainMenuList"><a class="mainMenu" href="../DesignLab/index.html">Design Lab</a></li>
+                    <li class="mainMenuList"><a class="mainMenu" href="../CSSLab/index.html">CSSLab</a></li>
+                    <li class="mainMenuList"><a class="mainMenu selected" href="../HTMLLab/index.html">HTMLLab</a></li>
+                    <li class="mainMenuList"><a class="mainMenu" href="../PHPLab/index.html">PHPLab</a></li>
+                    <li class="mainMenuList"><a class="mainMenu" href="../JavaScriptLab/index.html">JavaScriptLab</a></li>
+                    <li class="mainMenuList"><a class="mainMenu" href="../GitMaster/index.html">GitMaster</a></li>
+                </menu>
+            </nav>
+        </header>
+        
+        <h1>footerとは</h1>
+        
+        <footer>
+            <a href="http://sunstripe.main.jp/">HOME</a> > <a href="./index.html">素敵曜日 - HTML Lab</a> > <a href="./reference.html">reference</a> > <a href="./help.html">HELP</a>
+            <div style="clear:both;text-align:center;">
+                <div id="footer-main-contents">
+                    <div id="footer-magazine">
+                        <h3>MAGAZINE&amp;BOOK</h3>
+                        <ul>
+                            <li>
+                                MAGAZINE(1)
+                            </li>
+                            <li>
+                                MAGAZINE(2)
+                            </li>
+                            <li>
+                                MAGAZINE(3)
+                            </li>
+                            <li>
+                                MAGAZINE(4)
+                            </li>
+                            <li>
+                                MAGAZINE(5)
+                            </li>
+                            <li>
+                                MAGAZINE(6)
+                            </li>
+                            <li>
+                                BOOK(1)
+                            </li>
+                            <li>
+                                BOOK(2)
+                            </li>
+                            <li>
+                                BOOK(3)
+                            </li>
+                            <li>
+                                BOOK(4)
+                            </li>
+                            <li>
+                                BOOK(5)
+                            </li>
+                            <li>
+                                BOOK(6)
+                            </li>
+                            <li>
+                                BOOK(7)
+                            </li>
+                            <li>
+                                BOOK(8)
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="footer-category">
+                        <h3>CATEGORY</h3>
+                        <ul>
+                            <li>
+                                ファッション
+                            </li>
+                            <li>
+                                ビューティ
+                            </li>
+                            <li>
+                                ライフ
+                            </li>
+                            <li>
+                                フード
+                            </li>
+                            <li>
+                                エンタメ
+                            </li>
+                            <li>
+                                ショッピング
+                            </li>
+                            <li>
+                                占い
+                            </li>
+                            <li>
+                                キーワード一覧
+                            </li>
+                            <li>
+                                過去記事すべて
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div id="footer-other">
+                        <div id="footer-about">
+                            <h3>ABOUT</h3>
+                            <ul>
+                                <li>
+                                    Team SunStripeとは？
+                                </li>
+                                <li>
+                                    広告掲載について
+                                </li>
+                                <li>
+                                    よくあるお問い合わせ
+                                </li>
+                                <li>
+                                    プライバシーステートメント
+                                </li>
+                                <li>
+                                    会員規約
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="footer-link">
+                            <h3>関連サイト</h3>
+                        </div>
+                        <div id="footer-share">
+                            <h3>SHARE</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-message-contents">
+                    <div id="footer-message">
+                        編集部から届くメールマガジン、会員限定プレゼントや特別イベントへの応募など特典が満載
+                    </div>
+                    <div id="footer-member-join">
+                        新規会員登録
+                    </div>
+                    <div id="footer-copyright">
+                        &copy; 2011 -
+                        <script>
+                            var newDate = new Date();
+                            //年・月・日・曜日を取得する
+                            var year = newDate.getFullYear();
+                            document.write(year);
+                            </script> Team Sun Stripe Inc. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
