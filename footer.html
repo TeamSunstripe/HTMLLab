@@ -27,7 +27,11 @@
                 height:auto;
                 background-color: rgba(255,100,100,0.5);
                 clear: both;
-                display:flex; /* 高さを合わせる */
+                display: flex; /* 高さを合わせる */
+                display: -webkit-box; /*Android4.3*/
+                display: -moz-box;    /*Firefox21*/
+                display: -ms-flexbox; /*IE10*/
+                display: -webkit-flex; /*PC-Safari,iOS8.4*/
             }
             #footer-main-contents h3 {
                 padding-top:10px;
@@ -103,7 +107,11 @@
             width: 100%;
             background-color: rgba(255,100,100,0.5);
             clear: both;
-                display:flex; /* 高さを合わせる */
+            display: flex; /* 高さを合わせる */
+            display: -webkit-box; /*Android4.3*/
+            display: -moz-box;    /*Firefox21*/
+            display: -ms-flexbox; /*IE10*/
+            display: -webkit-flex; /*PC-Safari,iOS8.4*/
         }
         /* footer-message */
         #footer-message {
