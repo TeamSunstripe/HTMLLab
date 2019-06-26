@@ -5,6 +5,55 @@
         <title>素敵曜日 - HTML Lab - footer要素</title>
         <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
         <style>
+            #main_about_description {
+                border-left: double 10px rgba(255, 196, 0, 0.5);
+                border-bottom: inset 5px rgba(255, 196, 0, 0.5);
+                border-radius: 10px;
+                margin: 5px;
+                padding: 5px;
+            }
+            #main_about_description:hover {
+                opacity: 0.8;
+            }
+            #main_MDNwebdocs {
+                border-radius: 10px;
+                margin: 5px;
+                padding: 5px;
+                border-left: double 10px rgba(0, 0, 0, 0.3);
+                border-bottom: inset 5px rgba(0, 0, 0, 0.3);
+            }
+            #main_MDNwebdocs tr {
+                background-color: rgba(255, 255, 255, 1.0);
+            }
+            #main_MDNwebdocs th:hover,td:hover {
+                opacity: 0.5;
+            }
+            .tag {
+                margin: 5px;
+                padding: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 10px;
+            }
+            .tag:hover {
+                opacity: 0.5;
+            }
+            .colorBlack {
+                background-color: rgba(0,0,0,0.5);
+                color:white;
+            }
+            .colorFirefox4 {
+                background-color: rgba(255,255,0,0.5);
+            }
+            .colorGoogleChrome5 {
+                background-color: rgba(255,0,0,0.5);
+            }
+            .colorGoogleChrome6 {
+                background-color: rgba(255,0,255,0.5);
+            }
+            .colorSafari5 {
+                background-color: rgba(0,255,255,0.5);
+            }
         </style>
     </head>
     <body>
@@ -37,26 +86,74 @@
                         
                 <article class="contents_html">
                     <a href="./footer.html"><h3>footer要素</h3></a><br />
-                    footer要素とは？<br />
-                    footer要素の書き方<br />
-                    footer要素の作成<br />
+                    <a href="#main_about">footer要素とは？</a><br />
+                    <a href="#main_howto_write">footer要素の書き方</a><br />
+                    <a href="#main_create">footer要素の作成</a><br />
                 </article>
 
                 <h2>footer要素とは？</h2>
                 
                 <article class="contents_main_about">
+                    footer要素は、HTML5から新たに追加された要素です。<br />
                     <a name="main_about"><h3>footer要素とは？</h3></a><br />
                     <!-- とは？ //-->
+                    <div id="main_about_description">
+                    &lt;footer&gt;タグは、直近のセクションのフッタであることを示す際に使用します。<br />
+                    <br />
+                    フッタとは、そのセクションに関する情報のことで、一般的には、誰が書いたのか、関連文書へのリンク、著作権などの情報が含まれます。 作者の連絡先情報は&lt;address&gt;で示しますが、これを&lt;footer&gt;～&lt;/footer&gt;の中に入れても良いでしょう。
+                    <br />        
+                    フッタはセクションの最後に配置されることが多いですが、必ずしもそうする必要はありません。 以下のサンプルにはフッタが二箇所ありますが、それぞれ、記事セクションのフッタ、文書全体のフッタとなっています。
+
+                    HTML の &lt;footer&gt; 要素 は、直近の区分コンテンツまたは区分化ルート要素のフッターを表します。フッターには通常、そのセクションの著作者に関する情報、関連文書へのリンク、著作権情報等を含めます。
+                    </div>
                 </article>
 
                 <article class="contents_howto_write">
                     <a name="main_howto_write"><h2>footer要素の書き方</h2></a>
                     <!-- 書き方 //-->
-                </article>
+                    <h3>HTMLソース</h3>
+                    <span class="tag colorBlack">sample.html</span>
+<textarea id="sample_code_input" style="width:98%;height: 300px;background-color: black;color:lightblue;font-family: Verdana, Geneva, Tahoma, sans-serif;padding: 5px;">
+<body>
+
+<h1>太郎のブログ</h1>
+<article>
+<h1>カメを助けた</h1>
+<p>今日、海へ釣りに出掛けたら、子どもたちがカメをいじめていたので…</p>
+<footer>
+<p>Posted by 太郎</p>
+<address>taro@example.com</address>
+</footer>
+</article>
+
+<footer>
+<nav>
+<a href="index.html">トップページ</a> 
+<a href="about.html">このブログについて</a> 
+<a href="profile.html">作者の紹介</a> 
+</nav>
+<p>Copyright 2010</p>
+</footer>
+
+</body>
+</textarea>
+</article>
+<div id="sample_code_display" style="width:98%">
+<style>
+</style>
+</div>
+<script>
+    var sample_code_input = document.getElementById('sample_code_input');
+    var sample_code_display = document.getElementById('sample_code_display');
+    sample_code_display.innerHTML = sample_code_input.value;
+</script>
+            </article>
 
                 <article class="contents_create">
                     <a name="main_create"><h2>footer要素の作成</h2></a>
                     <!-- 作成 //-->
+
+                    &lt;footer&gt;～&lt;/footer&gt;
                 </article>
             </section>
 
@@ -68,13 +165,219 @@
                 <article class="contents_html_history">
                     <a href="#html_history.html"><h3>footer要素の歴史</h3></a>
                     footer要素のはじまり～HTML5.0
+
+                    <h3>■HTML4.01からHTML5へのバージョンアップによる変更点</h3>
+                    footer要素は、HTML5から新たに追加された要素です。
+                </article>
+
+                <article>
+                        <h4>&lt;footer&gt; …… フッタであることを示すHTML5から追加</h4>
+                        <span class="tag colorFirefox4">Firefox4</span>
+                        <span class="tag colorGoogleChrome5">Google Chrome5</span>
+                        <span class="tag colorGoogleChrome6">Google Chrome6</span>
+                        <span class="tag colorSafari5">Safari5</span>
                 </article>
                 
+                    <table id="main_MDNwebdocs">
+                        <tbody>
+                        <tr>
+                            <th>
+                                コンテンツカテゴリ
+                            </th>
+                            <td>
+                                フローコンテンツ, 知覚可能コンテンツ
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                許可されている内容
+                            </th>
+                            <td>
+                                フローコンテンツ。但し、他の &lt;footer&gt; や &lt;header&gt; の子孫がないもの。
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                タグの省略
+                            </th>
+                            <td>
+                                不可。開始と終了タグの両方が必要。
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                許可されている親要素
+                            </th>
+                            <td>
+                                フローコンテンツを受け入れるすべての要素。ただし、 &lt;address&gt;, &lt;header&gt;, 他の &lt;footer&gt; の子孫要素として配置してはならない。
+                            </td>   
+                        </tr>
+                    <tr>
+                        <th>
+                            許可されている ARIA ロール
+                        </th>
+                        <td>
+                            group, presentation
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            DOM インターフェイス
+                        </th>
+                        <td>
+                            HTMLElement
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+
+
             </section>
 
             <aside class="ad_space">
                 広告スペース
             </aside>
+
+            <section>
+                <h1>Sample</h1>
+                <article>
+                <h2>Sample Store</h2>
+                <footer id="sample_store" style="background-color: aliceblue;">
+                    <div style="background-color: aliceblue;font-size: 0.6vw">
+                    * 価格は、sPhone 7 Plus（256GB）をSampleStoreの店頭で下取りに出した場合のものです。下取り額と下取りの条件は予告なく変更される場合があります。下取り額は新しいsPhoneの購入が条件となり、制限が適用される場合があります。下取り額は、下取りに出すデバイスの状態、製造年、構成によって異なります。一部のデバイスは下取りの対象ではありません。本キャンペーンは店頭での下取りのみが対象で、オンラインでは利用できません。20歳以上の方のみが対象です。有効な身分証明書の提示が必要です。SampleまたはSampleの下取りプログラムの承認パートナーは、理由を問わず、デバイスの受け取りを拒否する権利または数を制限する権利を有します。Sampleまたは承認パートナーによるその他の条件については、www.sample.com/jp/trade-inをご覧ください。
+                    
+                    </div>
+                    <hr />
+                    <div style="float:left;width:30%;">
+                        <h4>製品情報と購入</h4>
+<pre>
+Sac
+sPad
+sPhone
+Watch
+Music
+sTunes
+sPod touch
+アクセサリ
+ギフトカード
+</pre>
+                    </div>
+                    <div style="float:left;width:30%;">
+                        <h4>SampleStore</h4>
+<pre>
+お近くのSample Store
+Genius Bar
+Today at Sample
+サマーキャンプ
+フィールドトリップ
+SampleStore App
+整備済製品＆旧モデル新品
+分割でのお支払い
+SampleTrade In
+ご注文状況
+ご利用ガイド
+</pre>
+            </div>
+                    <div style="float:left;width:30%;">
+                        <h4>教育</h4>
+<pre>
+Sampleと教育
+学生・教職員向けストア
+</pre>
+                        <h4>ビジネス</h4>
+<pre>
+Sampleとビジネス
+ビジネス向けストア
+</pre>
+                        <h4>ヘルスケア</h4>
+<pre>
+Sampleとヘルスケア
+</pre>
+                </div>
+                <hr style="clear:both;"/>
+            <div style="float:left;width:30%;">
+                        <h4>アカウント</h4>
+<pre>
+SampleIDの管理
+SampleStoreアカウント
+sCloud.com
+</pre>
+                        <h4>Sampleの取り組み</h4>
+<pre>
+アクセシビリティ
+環境
+プライバシー
+サプライヤー責任
+</pre>
+            </div>
+
+            <div style="float:left;width:30%;">
+                        <h4>Sampleについて</h4>
+<pre>
+Newsroom
+Sampleの役員について
+採用情報
+イベント
+雇用創出
+</pre>
+</div>
+<hr style="clear:both;"/>
+   <h4>Sampleの連絡先</h4>
+                    <address>
+                    お近くのSampleStore、またはSample製品取扱店で製品を購入することもできます。電話による購入、ご相談は0120-333-333まで。English Sales Line, Click here.
+                    </address>
+                    <hr style="clear:both;"/>
+                </footer>
+                </article>
+
+                <article>
+
+                <h2>Sample Live</h2>
+
+                <footer id="sample_live" style="background-color: azure;">
+
+                    <div style="float:left;width:33%;">
+                        <a href="index.html"><img src="" alt="" /></a><br />
+                        <a href="#twitter">FOLLOW US ON</a><br />
+                        ©<a href="index.html">SAMPLE LIVE</a> Inc.<br />
+                    </div>
+                    <div style="float:left;width:34%;">
+                        <a href="index.html">ホーム</a><br />
+                        <a href="#onlive.html">オンライブ</a><br />
+                        <a href="#event.html">イベント</a><br />
+                        <a href="#campaign.html">キャンペーン</a><br />
+                        <a href="#ranking.html">ランキング</a><br />
+                        <a href="#room.html">ルーム</a><br />
+                    </div>
+                    <div style="float:left;width:33%;">
+                        <a href="#faq.html">よくある質問</a><br />
+                        <a href="#contact.html">お問い合わせ</a><br />
+                        <a href="#opinion.html">ご意見</a><br />
+                        <a href="#agreement.html">会員規約</a><br />
+                        <a href="#policy.html">プライバシーポリシー</a><br />
+                        <a href="#raw.html">特定商取引法に基づく表記</a><br />
+                        <a href="#license.html">ライセンス</a><br />
+                        <a href="#company.html">運営会社</a><br />
+                        <a href="#logo.html">ロゴガイドラインとバナー素材</a><br />
+                        <a href="#organizer.html">所属タレントの公式配信をご希望の企業様はこちら</a><br />
+                    </div>
+                    <hr style="clear:both;"/>
+                </footer>
+                </article>
+
+                <article>
+                    <h2>Sample Coffee Shop</h2>
+                    <footer id="sample_coffee_shop" style="background-color: azure;">
+    
+                    <a href="#blog.html">公式ブログ</a> <a href="#twitter">Twitter</a> <a href="#facebook">Facebook</a> <a href="#instagram">Instagram</a> <a href="#pinterest">Pinterest</a><br />
+                    <a href="#registration.html">会員登録</a> <a href="#faq.html">よくあるご質問</a>・<a href="#contact.html">お問い合わせ</a> <a href="#requirement.html">使用条件</a> <a href="#policy.html">ポリシー</a>・<a href="#agreement.html">約款・規約一覧</a> <a href="#sitemap.html">サイトマップ</a></a><br />
+                    ©2019 <a href="index.html">Sample Coffee Shop.</a> All Rights Reserved.<br />
+                    </footer>
+                </article>
+            </section>
+
+
+            <hr style="clear:both;"/>
 
             <section>
                 <h1>ウェブ制作</h1>        
